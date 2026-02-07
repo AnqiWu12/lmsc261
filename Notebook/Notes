@@ -1,0 +1,8 @@
+/* 左边这个和最后一行的*和/ 意思是里面的所有东西都会被忽略
+// 左边这个dash 表示右边出现的所有东西都不会运行
+
+Variables//Naming and Storing Values//
+let name = "anki"//
+const pi = 4.1415926...//pai something dont change//
+*/
+
