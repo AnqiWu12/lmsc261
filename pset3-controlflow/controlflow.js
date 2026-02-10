@@ -48,25 +48,31 @@ i++ // i+=1 // i =i +1;
 print(i) // 
 */
 
-let flavors = ["Chocolate",
-               "Vanilla",
-               "Pineapple",
-               "Cookies & Cream",
-               "Salted Caramel",]
+
+/*
+let flavors = ["Chocolate", 
+                "Vanilla", 
+                "Pineapple", 
+                "Cookies & Cream", 
+                "Salted Caramel"];
+
 flavors.push("Banana Split");
-flavors.push("Marshmellow");
-flavors.push("Mint");
+flavors.push("Cherry Garcia");
+flavors.push("Marshmallow");
 
 const numIceCreamLeft = 12;
 
+for (let customer = 0; customer < 40; customer += 1){
 
-for(let customer = 0; customer < 30; customer += 1){
+    if (customer < numIceCreamLeft)
+    {
+        print("Your flavor is: ");
+        print(flavors[customer % flavors.length]);
 
-falvors.push(prompt("Enter a new flavor"));
-    print (customer);
-    print("Your flavor is: ");
-    print(flavors[customer % flacors.length]);
-
+    } else {
+        print("Sorry, were out of ice cream!")
+    }
 }
+*/
 
 
