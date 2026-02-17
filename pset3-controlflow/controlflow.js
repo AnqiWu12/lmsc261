@@ -75,4 +75,37 @@ for (let customer = 0; customer < 40; customer += 1){
 }
 */
 
+/*
+let numBlocks = prompt("How many blocks?");
+
+for (let row = 0; row < numBlocks; row++)
+{
+    let blocks = [];
+    for (let col = numBlocks; col > 0; col--)
+    {
+        if(row < col)
+        {
+            blocks.push("_");
+        } else {
+            blocks.push("#");
+        }
+    }
+    print(blocks);
+}
+    
+*/
+
+let minNameLength = true;
+let nameInput;
+while (minNameLength)
+{
+    nameInput = prompt ("Please enter your name");
+    if (nameInput.length >= 6)
+    {
+        minNameLength = false;
+     
+    
+    }
+}   print ("HAHA")
+
 
