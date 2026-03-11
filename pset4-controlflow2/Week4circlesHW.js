@@ -9,8 +9,8 @@ const drawing = p5 => {
     let centerX = 300;
     let centerY = 300;
 
-    for (let circle = 0; circle < 40; circle++) {
-      let radius = 10 + circle * 12;
+    for (let circle = 0; circle < 20; circle++) {
+      let radius = 5 + circle *15;
 
       // brighter
       if (circle % 4 === 0) p5.fill(200, 220, 255, 80);
@@ -21,7 +21,7 @@ const drawing = p5 => {
       if (circle % 7 === 0) wobble = 8;
 
       p5.noStroke();
-      p5.circle(centerX, centerY, radius + wobble);
+      p5.circle(p5.mouseX, p5.mouseY, radius + wobble);
     }
   };
 };
