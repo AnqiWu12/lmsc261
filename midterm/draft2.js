@@ -55,39 +55,39 @@ const drawing = p5 => {
     p5.circle(centerX, centerY, pupilSize);
 
     //The eyelashes
-    //upper
-    // The eyelashes
-// upper
-p5.noFill();
-p5.stroke(255);
 
-let speed = 0.06;
-let amount = 4;
+    // upper with waggle
+    p5.noFill();
+    p5.stroke(255);
 
-let w1 = Math.sin(p5.frameCount * speed + 0.0) * amount;
-let w2 = Math.sin(p5.frameCount * speed + 0.4) * amount;
-let w3 = Math.sin(p5.frameCount * speed + 0.8) * amount;
-let w4 = Math.sin(p5.frameCount * speed + 1.2) * amount;
-let w5 = Math.sin(p5.frameCount * speed + 1.6) * amount;
-let w6 = Math.sin(p5.frameCount * speed + 2.0) * amount;
-let w7 = Math.sin(p5.frameCount * speed + 2.4) * amount;
-let w8 = Math.sin(p5.frameCount * speed + 2.8) * amount;
-let w9 = Math.sin(p5.frameCount * speed + 3.2) * amount;
-let w10 = Math.sin(p5.frameCount * speed + 3.6) * amount;
-let w11 = Math.sin(p5.frameCount * speed + 4.0) * amount;
+    let speed = 0.06;
+    let amount = 4;
 
-p5.arc(centerX - 160 + w1, centerY - 80, 25, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX - 130 + w2, centerY - 100, 35, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX - 95 + w3, centerY - 118, 35, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX - 65 + w4, centerY - 125, 28, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX - 30 + w5, centerY - 130, 28, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX + w6, centerY - 135, 22, 60, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX + 30 + w7, centerY - 135, 30, 60, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX + 65 + w8, centerY - 125, 28, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX + 90 + w9, centerY - 118, 28, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX + 130 + w10, centerY - 100, 25, 55, Math.PI/2, Math.PI/2*3);
-p5.arc(centerX + 160 + w11, centerY - 77, 12, 50, Math.PI/2, Math.PI/2*3);
-    /*
+    let w1 = Math.sin(p5.frameCount * speed + 0.0) * amount;
+    let w2 = Math.sin(p5.frameCount * speed + 0.4) * amount;
+    let w3 = Math.sin(p5.frameCount * speed + 0.8) * amount;
+    let w4 = Math.sin(p5.frameCount * speed + 1.2) * amount;
+    let w5 = Math.sin(p5.frameCount * speed + 1.6) * amount;
+    let w6 = Math.sin(p5.frameCount * speed + 2.0) * amount;
+    let w7 = Math.sin(p5.frameCount * speed + 2.4) * amount;
+    let w8 = Math.sin(p5.frameCount * speed + 2.8) * amount;
+    let w9 = Math.sin(p5.frameCount * speed + 3.2) * amount;
+    let w10 = Math.sin(p5.frameCount * speed + 3.6) * amount;
+    let w11 = Math.sin(p5.frameCount * speed + 4.0) * amount;
+
+    p5.arc(centerX - 160 + w1, centerY - 80, 25, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX - 130 + w2, centerY - 100, 35, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX - 95 + w3, centerY - 118, 35, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX - 65 + w4, centerY - 125, 28, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX - 30 + w5, centerY - 130, 28, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX + w6, centerY - 135, 22, 60, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX + 30 + w7, centerY - 135, 30, 60, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX + 65 + w8, centerY - 125, 28, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX + 90 + w9, centerY - 118, 28, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX + 130 + w10, centerY - 100, 25, 55, Math.PI/2, Math.PI/2*3);
+    p5.arc(centerX + 160 + w11, centerY - 77, 12, 50, Math.PI/2, Math.PI/2*3);
+
+    /* upper eyelash  with no waggle
     p5.noFill();
     p5.stroke(350);
     p5.arc(centerX - 160, centerY - 80, 25, 55, Math.PI/2, Math.PI/2*3);
@@ -102,7 +102,8 @@ p5.arc(centerX + 160 + w11, centerY - 77, 12, 50, Math.PI/2, Math.PI/2*3);
     p5.arc(centerX + 130, centerY - 100, 25, 55, Math.PI/2, Math.PI/2*3);
     p5.arc(centerX + 160, centerY - 77, 12, 50, Math.PI/2, Math.PI/2*3);
     */
-    //lower
+
+    //lower Eyelashes
     p5.arc(centerX - 150, centerY + 80, 10, 35, Math.PI/2*3, Math.PI/2);
     p5.arc(centerX - 120, centerY + 100, 15, 35, Math.PI/2*3, Math.PI/2);
     p5.arc(centerX - 65, centerY + 118, 15, 35, Math.PI/2*3, Math.PI/2);
