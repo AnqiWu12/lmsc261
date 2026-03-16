@@ -50,9 +50,22 @@ const drawing = p5 => {
     p5.arc(centerX, centerY, eyeWidth, eyeHeight, 0, Math.PI);
 
 
+    // The pupil movement
+    let pupilMoveAmount = 10 + clickCount * 4;
+    if (pupilMoveAmount > 45) {
+      pupilMoveAmount = 45;
+    }
+
+    let pupilOffsetX = Math.sin(p5.frameCount * 0.03) * pupilMoveAmount;
+    let pupilOffsetY = Math.cos(p5.frameCount * 0.02) * 8;
+
     // The pupil
     p5.fill(pupilColor[0], pupilColor[1], pupilColor[2]);
-    p5.circle(centerX, centerY, pupilSize);
+    p5.circle(centerX + pupilOffsetX, centerY + pupilOffsetY, pupilSize);
+
+    // highlight
+    p5.fill(255);
+    p5.circle(centerX + pupilOffsetX - 15, centerY + pupilOffsetY - 15, 12);
 
     //The eyelashes
 
