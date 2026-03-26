@@ -1,0 +1,8 @@
+body {
+    background-color:lightpink;
+    font-family: Impact, Fantasy, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+}

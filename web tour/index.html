@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>ChefWu's Recipe</title>
+    </head>
+
+    <link rel="stylesheet" href="Styles.css">
+
+    <script>
+       <script>
+        let isJack = true;
+
+        function swapPhoto() {
+            const img = document.querySelector("img");
+
+            if (isJack) {
+                img.src = "resources/tomodachii.jpg";
+                isJack = false;
+            } else {
+                img.src = "resources/jack.jpg";
+                isJack = true;
+            }
+    </script>
+    <body>
+        <h1>Hello World!</h1>
+        <p>Welcome to ChefWu's website.</p>
+        <p>This is where the delicious things are made.</p>
+
+        <h2>History</h2>
+        <p>ChefWu is a great cook, even cockroaches want to take a bite of his food.</p>
+        <p>HAHAHA...Just kidding!</p>
+        <p>ChefWu loves everything made with tomatoes, curry and eggs.</p>
+        <p>Curry Omulette rice is one of ChefWu's specialities.</p>
+
+        <p>For more information on ChefWu:</p>
+        <a href="https://www.tommyxwu.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAQyfFhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadE0G71COKk0dMNPL0ahgLggFf9DC1ZlVKpcb7uXpp7wLDwVnyAb04Dy3t3eg_aem_Utel48EYahBkXIW6Irgesw" >More Info Here</a>
+
+        <h2>The man himself:</h2>
+        <img src="resources/jack.jpg">
+        <button onClick="swapPhoto()">Click here to make ChefWu cook!</button>
+
+    </body>
+</html>
