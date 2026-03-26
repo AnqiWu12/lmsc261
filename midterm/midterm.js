@@ -67,7 +67,7 @@ if (pupilSize > maxPupilSize) {
     p5.circle(centerX + pupilOffsetX, centerY + pupilOffsetY, pupilSize);
 
     // inner pupil group
-    
+    p5.noStroke();
     let innerPupilSize = pupilSize * 0.32;
     let highlightSize = pupilSize * 0.13;
 
