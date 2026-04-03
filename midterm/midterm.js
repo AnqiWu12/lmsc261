@@ -88,8 +88,6 @@ if (pupilSize > maxPupilSize) {
     );
 
 
-
-
     
 //The eyelashes
 
