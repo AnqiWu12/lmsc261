@@ -74,5 +74,5 @@ with wave.open(file_path, 'rb') as audio_file:
     print("Sample Rate:", sample_rate, "Hz")
     print("Number of Channels:", channels)
     print("Number of Frames:", frames)
-    print("Duration:", duration, "seconds")
+    print(f"duration: {duration:.3f} seconds")
 
