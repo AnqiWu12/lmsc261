@@ -1,4 +1,4 @@
-//Fuction
+#Fuction
 def format_name(name):
     formatted = "Hello, " + name;
     return formatted
@@ -6,6 +6,6 @@ def format_name(name):
 greeting = format_name("Spongebob")
 print(greeting)
 
-//Lists
+#Lists
 fruits = ['apple', 'banana', 'cherry']
 print(fruits[-3])

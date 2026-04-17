@@ -84,16 +84,15 @@ with wave.open(file_path, 'rb') as audio_file:
         channel_type = "Unknown Format"
 
 
-
-#Print the analyze results
+#Print the analyzed results
     print("Sample Rate:", sample_rate, "Hz")
     print(f"Number of Channels: {channels} ({channel_type})")
     print("Number of Frames:", frames)
 #Minutes and seconds for duration print
     if duration < 60:
-        print(f"Duration: {duration:.3f} seconds")
+        print(f"Duration: {duration:.2f} seconds")
     else:
         minutes = int(duration // 60)
         seconds = duration % 60
-        print(f"Duration: {minutes} minutes {seconds:.3f} seconds")
+        print(f"Duration: {minutes} minutes {seconds:.0f} seconds")
 
