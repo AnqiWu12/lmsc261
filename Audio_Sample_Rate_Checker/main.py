@@ -71,8 +71,29 @@ with wave.open(file_path, 'rb') as audio_file:
     frames = audio_file.getnframes()
     duration = frames / float(sample_rate)
 
+
+    if channels == 1:
+        channel_type = "Mono"
+    elif channels == 2:
+        channel_type = "Stereo"
+    elif channels == 4:
+        channel_type = "Quad"
+    elif channels == 6:
+        channel_type = "5.1 Surround"
+    else:
+        channel_type = "Unknown Format"
+
+
+
+#Print the analyze results
     print("Sample Rate:", sample_rate, "Hz")
-    print("Number of Channels:", channels)
+    print(f"Number of Channels: {channels} ({channel_type})")
     print("Number of Frames:", frames)
-    print(f"duration: {duration:.3f} seconds")
+#Minutes and seconds for duration print
+    if duration < 60:
+        print(f"Duration: {duration:.3f} seconds")
+    else:
+        minutes = int(duration // 60)
+        seconds = duration % 60
+        print(f"Duration: {minutes} minutes {seconds:.3f} seconds")
 
