@@ -96,3 +96,5 @@ with wave.open(file_path, 'rb') as audio_file:
         seconds = duration % 60
         print(f"Duration: {minutes} minutes {seconds:.0f} seconds")
 
+        
+
